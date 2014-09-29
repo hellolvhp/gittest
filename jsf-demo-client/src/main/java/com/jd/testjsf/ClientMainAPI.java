@@ -30,7 +30,7 @@ public class ClientMainAPI {
 
 	    RegistryConfig jsfRegistry = new RegistryConfig();
         jsfRegistry.setIndex("index.saf.jd.com"); // 测试环境192.168.209.74 index.saf.jd.com
-        // safRegistry.setProtocol("safRegistry");
+        // safRegistry.setProtocol("jsfRegistry");
         // safRegistry.setAddress("192.168.209.74:40660");
 		LOGGER.info("实例RegistryConfig");
 
