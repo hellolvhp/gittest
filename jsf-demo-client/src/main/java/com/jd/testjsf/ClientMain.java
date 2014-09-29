@@ -30,7 +30,7 @@ public class ClientMain {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"/saf-consumer.xml");
+                "/jsf-consumer.xml");
 
 		HelloService service = (HelloService) appContext
 				.getBean("helloService");

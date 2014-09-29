@@ -30,7 +30,7 @@ public class ServerMain {
 	public static void main(String[] args) {
 
 		ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
-				"/saf-provider.xml");
+                "/jsf-provider.xml");
 
 		LOGGER.info("服务端启动完成！");
 
