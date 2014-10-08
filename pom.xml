@@ -7,7 +7,8 @@
     <artifactId>jsf-demo</artifactId>
     <packaging>pom</packaging>
     <name>jsf-demo</name>
-    <description>jsf Example</description>
+    <description>Demo of JSF</description>
+    <url>http://jsf.jd.com</url>
     <modules>
         <module>jsf-demo-server</module>
         <module>jsf-demo-client</module>
@@ -37,7 +38,7 @@
             <dependency>
                 <groupId>com.jd</groupId>
                 <artifactId>jsf</artifactId>
-                <version>2.1.0-SNAPSHOT</version>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
 
             <dependency>

@@ -7,15 +7,15 @@
     <!-- 实现类 -->
     <bean id="helloServiceImpl" class="com.jd.testjsf.HelloServiceImpl" />
 
-    <!-- 注册中心 address="192.168.209.74:40770" -->
+    <!-- 注册中心 address="192.168.209.74:40660" -->
     <jsf:registry id="jsfRegistry" protocol="jsfRegistry" index="index.saf.jd.com" />
 
     <!-- 服务端 -->
-    <jsf:server id="jsf" protocol="jsf"/>
+    <jsf:server id="myjsf" protocol="jsf"/>
 
     <!-- 发布服务 alias可以改成自己的 -->
     <jsf:provider id="helloService" interface="com.jd.testjsf.HelloService" alias="CHANGE-IT"
-                 ref="helloServiceImpl" server="jsf" >
+                 ref="helloServiceImpl" server="myjsf" >
     </jsf:provider>
     
 </beans>
