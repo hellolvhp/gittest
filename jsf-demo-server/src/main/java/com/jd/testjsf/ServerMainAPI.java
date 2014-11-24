@@ -41,6 +41,7 @@ public class ServerMainAPI {
         // 服务端配置（必须）
         ServerConfig serverConfig = new ServerConfig();
         serverConfig.setProtocol("jsf");
+        // serverConfig.setHost("0.0.0.0"); 可以判定到全部网卡
         // serverConfig.setPort(20880); // 可以指定端口
         LOGGER.info("实例ServerConfig");
 

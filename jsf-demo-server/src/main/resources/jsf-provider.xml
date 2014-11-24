@@ -8,7 +8,7 @@
     <bean id="helloServiceImpl" class="com.jd.testjsf.HelloServiceImpl" />
 
     <!-- 注册中心 address="192.168.209.74:40660" -->
-    <jsf:registry id="jsfRegistry" protocol="jsfRegistry" index="i.jsf.jd.com" />
+    <jsf:registry id="jsfRegistry" index="i.jsf.jd.com" />
 
     <!-- 服务端 -->
     <jsf:server id="myjsf" protocol="jsf"/>
