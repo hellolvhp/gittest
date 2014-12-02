@@ -29,7 +29,7 @@ public class ClientMainAPI {
 	public static void main(String[] args) {
 
 	    RegistryConfig jsfRegistry = new RegistryConfig();
-        jsfRegistry.setIndex("index.saf.jd.com"); // 测试环境192.168.209.74 index.saf.jd.com
+        jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.209.74 i.jsf.jd.com
         // safRegistry.setProtocol("jsfRegistry");
         // safRegistry.setAddress("192.168.209.74:40660");
 		LOGGER.info("实例RegistryConfig");
@@ -44,6 +44,7 @@ public class ClientMainAPI {
 		LOGGER.info("实例ConsumerConfig");
 
 		HelloService service = consumerConfig.refer();
+        // 得到调用端代理后 请缓存下来保持单例
 		LOGGER.info("得到调用端代理：{}", service);
 		
 		while (true) {

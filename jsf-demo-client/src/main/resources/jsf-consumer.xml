@@ -6,7 +6,7 @@
     http://jsf.jd.com/schema/jsf  http://jsf.jd.com/schema/jsf/jsf.xsd">
 
     <!-- 注册中心 address="192.168.209.74:40770" -->
-    <jsf:registry id="jsfRegistry" protocol="jsfRegistry" index="index.jsf.jd.com"/>
+    <jsf:registry id="jsfRegistry" index="i.jsf.jd.com"/>
 
     <!-- 服务调用者配置 直连使用 url="jsf://127.0.0.1:20880;jsf://127.0.0.1:20881" -->
     <jsf:consumer id="helloService" interface="com.jd.testjsf.HelloService"

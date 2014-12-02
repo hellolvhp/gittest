@@ -33,7 +33,7 @@ public class ServerMainAPI {
 
         // 注册中心实现（必须）
         RegistryConfig safRegistry = new RegistryConfig();
-        safRegistry.setIndex("index.saf.jd.com"); // 测试环境192.168.209.74 index.saf.jd.com
+        safRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.209.74 i.jsf.jd.com
         // safRegistry.setProtocol("jsfRegistry");
         // safRegistry.setAddress("192.168.209.74:40660");
         LOGGER.info("实例RegistryConfig");
@@ -41,6 +41,7 @@ public class ServerMainAPI {
         // 服务端配置（必须）
         ServerConfig serverConfig = new ServerConfig();
         serverConfig.setProtocol("jsf");
+        // serverConfig.setHost("0.0.0.0"); 可以判定到全部网卡
         // serverConfig.setPort(20880); // 可以指定端口
         LOGGER.info("实例ServerConfig");
 
