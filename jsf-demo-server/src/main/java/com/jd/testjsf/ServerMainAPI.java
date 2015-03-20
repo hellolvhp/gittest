@@ -8,7 +8,7 @@ import com.jd.jsf.gd.config.RegistryConfig;
 import com.jd.jsf.gd.config.ServerConfig;
 
 /**
- * Title: <br>
+ * Title: 使用API的方式（不依赖spring）发布JSF服务<br>
  *
  * Description: <br>
  *

@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Title: <br>
+ * Title: 使用spring集成的方式发布JSF服务<br>
  *
  * Description: <br>
  *
