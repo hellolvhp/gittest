@@ -29,9 +29,9 @@ public class ClientMainAPI {
 	public static void main(String[] args) {
 
 	    RegistryConfig jsfRegistry = new RegistryConfig();
-        jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.209.74 i.jsf.jd.com
-        // safRegistry.setProtocol("jsfRegistry");
-        // safRegistry.setAddress("192.168.209.74:40660");
+        jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.150.121 i.jsf.jd.com
+        // jsfRegistry.setProtocol("jsfRegistry");
+        // jsfRegistry.setAddress("192.168.150.119:40660,192.168.150.121:40660");
 		LOGGER.info("实例RegistryConfig");
 
 		// 服务提供者连接注册中心，设置属性

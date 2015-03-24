@@ -32,10 +32,10 @@ public class ServerMainAPI {
         HelloService helloService = new HelloServiceImpl();
 
         // 注册中心实现（必须）
-        RegistryConfig safRegistry = new RegistryConfig();
-        safRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.209.74 i.jsf.jd.com
-        // safRegistry.setProtocol("jsfRegistry");
-        // safRegistry.setAddress("192.168.209.74:40660");
+        RegistryConfig jsfRegistry = new RegistryConfig();
+        jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.150.121 i.jsf.jd.com
+        // jsfRegistry.setProtocol("jsfRegistry");
+        // jsfRegistry.setAddress("192.168.150.119:40660,192.168.150.121:40660");
         LOGGER.info("实例RegistryConfig");
 
         // 服务端配置（必须）
@@ -51,7 +51,7 @@ public class ServerMainAPI {
         providerConfig.setAlias("CHANGE-IT");
         providerConfig.setRef(helloService);
         providerConfig.setServer(serverConfig); // 多个server用list
-        providerConfig.setRegistry(safRegistry); // 多个registry用list
+        providerConfig.setRegistry(jsfRegistry); // 多个registry用list
         // providerConfig.setRegister(false);//打开注释表示不走注册中心
         LOGGER.info("实例ProviderConfig");
 
