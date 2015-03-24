@@ -33,7 +33,7 @@ public class ServerMainAPI {
 
         // 注册中心实现（必须）
         RegistryConfig safRegistry = new RegistryConfig();
-        safRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.209.74 i.jsf.jd.com
+        safRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.150.121 i.jsf.jd.com
         // safRegistry.setProtocol("jsfRegistry");
         // safRegistry.setAddress("192.168.209.74:40660");
         LOGGER.info("实例RegistryConfig");
