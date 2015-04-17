@@ -2,7 +2,7 @@ Example of JSF
 ====
 Include base server and client.
 
-The current stable version : 1.0.2
+The current stable version : 1.0.3
 
 ###Document:
 - [Admin Website](http://jsf.jd.com) JSF管理端
