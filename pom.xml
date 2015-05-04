@@ -38,7 +38,7 @@
             <dependency>
                 <groupId>com.jd</groupId>
                 <artifactId>jsf</artifactId>
-                <version>1.0.3</version>
+                <version>1.2.0</version>
             </dependency>
 
             <dependency>
@@ -78,38 +78,6 @@
                     <configuration>
                         <source>${jdk.version}</source>
                         <target>${jdk.version}</target>
-                        <encoding>${project.build.sourceEncoding}</encoding>
-                    </configuration>
-                </plugin>
-                <!-- resource插件设置，指定字符编码 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <version>2.5</version>
-                    <configuration>
-                        <encoding>${project.build.sourceEncoding}</encoding>
-                    </configuration>
-                </plugin>
-                <!-- 打包源码插件 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>2.2.1</version>
-                    <executions>
-                        <execution>
-                            <id>attach-sources</id>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!-- javadoc插件 ，指定字符编码 运行：mvn javadoc:jar生成javadoc -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.7</version>
-                    <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
