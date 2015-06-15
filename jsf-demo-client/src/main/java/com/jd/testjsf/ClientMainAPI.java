@@ -28,6 +28,7 @@ public class ClientMainAPI {
 	 */
 	public static void main(String[] args) {
 
+		// 注册中心实现，全局唯一（必须）
 	    RegistryConfig jsfRegistry = new RegistryConfig();
         jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.150.121 i.jsf.jd.com
         // jsfRegistry.setProtocol("jsfRegistry");

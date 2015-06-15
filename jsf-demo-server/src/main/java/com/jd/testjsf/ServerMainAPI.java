@@ -31,7 +31,7 @@ public class ServerMainAPI {
 
         HelloService helloService = new HelloServiceImpl();
 
-        // 注册中心实现（必须）
+        // 注册中心实现，全局唯一（必须）
         RegistryConfig jsfRegistry = new RegistryConfig();
         jsfRegistry.setIndex("i.jsf.jd.com"); // 测试环境192.168.150.121 i.jsf.jd.com
         // jsfRegistry.setProtocol("jsfRegistry");
@@ -41,7 +41,7 @@ public class ServerMainAPI {
         // 服务端配置（必须）
         ServerConfig serverConfig = new ServerConfig();
         serverConfig.setProtocol("jsf");
-        // serverConfig.setHost("0.0.0.0"); 可以判定到全部网卡
+        // serverConfig.setHost("0.0.0.0"); 可以绑定到全部网卡
         // serverConfig.setPort(20880); // 可以指定端口
         LOGGER.info("实例ServerConfig");
 
