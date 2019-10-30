@@ -14,7 +14,7 @@
     <jsf:server id="myjsf" protocol="jsf"/>
 
     <!-- 发布服务 alias可以改成自己的 -->
-    <jsf:provider id="helloService" interface="com.jd.testjsf.HelloService" alias="lvhongpin-test"
+    <jsf:provider id="helloService" interface="com.jd.testjsf.HelloService" alias="lvhongpin-brance"
                  ref="helloServiceImpl" server="myjsf" >
     </jsf:provider>
     
