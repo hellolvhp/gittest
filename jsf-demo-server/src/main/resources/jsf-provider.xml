@@ -6,6 +6,8 @@
 
     <!-- 实现类 -->
     <bean id="helloServiceImpl" class="com.jd.testjsf.HelloServiceImpl" />
+    <bean id="firstJsfServiceImpl" class="com.jd.lvhp.jsf.service.FirstJsfServiceImpl" />
+
 
     <!-- 注册中心 address="192.168.150.119:40660,192.168.150.121:40660" -->
     <jsf:registry id="jsfRegistry" index="i.jsf.jd.com" />
@@ -16,6 +18,9 @@
     <!-- 发布服务 alias可以改成自己的 -->
     <jsf:provider id="helloService" interface="com.jd.testjsf.HelloService" alias="lvhongpin-brance"
                  ref="helloServiceImpl" server="myjsf" >
+    </jsf:provider>
+    <jsf:provider id="firstJsfService" interface="com.jd.lvhp.jsf.service.FirstJsfService" alias="lvhp-first-jsf"
+                  ref="firstJsfServiceImpl" server="myjsf" >
     </jsf:provider>
     
 </beans>

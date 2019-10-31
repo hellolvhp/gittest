@@ -1,5 +1,6 @@
 package com.jd.testjsf;
 
+import com.jd.lvhp.jsf.service.FirstJsfService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -32,13 +33,13 @@ public class ClientMain {
 		ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "/jsf-consumer.xml");
 
-		HelloService service = (HelloService) appContext
-				.getBean("helloService");
+		FirstJsfService service = (FirstJsfService) appContext
+				.getBean("firstJsfService");
 		LOGGER.info("得到调用端代理：{}", service);
 
 		while (true) {
 			try {
-				String result = service.echoStr("zhanggeng put");
+				String result = service.sayHi("lvhp put");
 				LOGGER.info("response msg from server :{}", result);
 			} catch (Exception e) {
 				LOGGER.error(e.getMessage(), e);
