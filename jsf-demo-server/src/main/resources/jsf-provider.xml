@@ -17,8 +17,5 @@
     <jsf:provider id="helloService" interface="com.jd.testjsf.HelloService" alias="lvhongpin-brance"
                  ref="helloServiceImpl" server="myjsf" >
     </jsf:provider>
-    <jsf:provider id="helloGitService" interface="com.jd.testjsf.HelloGitService" alias="hello-git"
-                  ref="helloGitServiceImpl" server="myjsf" >
-    </jsf:provider>
     
 </beans>
